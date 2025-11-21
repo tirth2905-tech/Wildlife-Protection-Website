@@ -1,0 +1,83 @@
+<html>
+    <title>
+        Donation
+    </title>
+    <style>
+        body {
+font-family: "Segoe UI", Arial, sans-serif;
+background-color: black;
+margin: 0;
+padding: 20px;
+}
+        h1 {
+text-align: center;
+color: #000000;
+margin-bottom: 30px;
+font-size: 32px;
+}
+h2 {
+color: #000000;
+margin-top: 0;
+font-size: 22px;
+}
+.class
+ {
+background: rgba(222, 221, 216);
+padding: 20px;
+margin-bottom: 22px;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+transition: 0.3s ease-in-out;
+}
+input{
+    padding: 5px 20px;
+    background-color: bisque;
+    color: black;
+}
+    </style>
+    <body>
+     <form class="class" action="file:///C:/Users/lab103/Desktop/New%20folder/transaction%20successfull.html" method="post">
+        <h1><b>WildGuard</b></h1>
+       <h2> Donate Now - Give Wildlife A Better Tomorrow </h2>
+     <div>  <h2>Personal Information</h2>
+ 
+     <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="Full Name"><br><br>
+        <label for="Mobile Number">Mobile Number</label><br>
+        <input type="text" id="Mobile Number" name="Mobile Number"><br><br>
+        <label for="Email Address">Email Address</label><br>
+        <input type="text" id="Email Address" name="Email Address"><br><br>
+</div>
+<div>
+    <h2>Payment</h2>
+    <label for="Amount">Amount</label><br>
+        <input type="number" id="Amount" name="Amount" required min="100" max="100000000"><br>
+         <p>Mode Of Payment</p>
+
+      <input type="radio" id="cash" name="Mode Of Payment" value="cash">
+<label for="cash">Cash</label><br>
+
+<input type="radio" id="debit" name="Mode Of Payment" value="debit">
+<label for="debit">Debit Cards</label><br>
+
+<input type="radio" id="credit" name="Mode Of Payment" value="credit">
+<label for="credit">Credit Cards</label><br>
+
+<input type="radio" id="mobilewallets" name="Mode Of Payment" value="mobilewallets">
+<label for="mobilewallets">Mobile Wallets (e.g., Apple Pay, Google Pay)</label><br>
+
+<input type="radio" id="banktransfer" name="Mode Of Payment" value="banktransfer">
+<label for="banktransfer">Bank Transfers / NEFT</label><br>
+
+<input type="radio" id="checks" name="Mode Of Payment" value="checks">
+<label for="checks">Checks</label><br>
+
+<input type="radio" id="upi" name="Mode Of Payment" value="upi">
+<label for="upi">UPI / Instant Payment Apps</label><br><br>
+
+    <input type="submit" value="Pay">
+
+</div>
+</form>
+    </body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Protection Quiz</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://images.pexels.com/photos/34780766/pexels-photo-34780766.jpeg);
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .quiz-box {
+            background-color: #fff;
+            margin: 40px 20px;
+            padding: 30px;
+            max-width: 700px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #c9e6c9; 
+        }
+
+        h1 {
+            color: #2e7d32; 
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2em;
+        }
+
+        p.intro {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+        }
+
+        .card {
+            border: 1px solid #d4e9d4; 
+            background-color: #fafffa; 
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        .ques {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #1e4620; 
+            margin-bottom: 15px;
+        }
+
+        .choice {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .choice:hover {
+            background-color: #e6f2e6; 
+        }
+
+        .choice input[type="radio"] , .choice input[type="checkbox"] 
+        {
+            margin-right: 10px;
+            transform: scale(1.1);
+        }
+
+       
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 30px;
+            background-color: #4caf50; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:hover {
+            background-color: #388e3c; 
+            transform: translateY(-2px); 
+        }
+
+        
+        #result {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border: 3px dashed #4caf50;
+            background-color: #f0fff0;
+            border-radius: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #1e4620;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-box">
+        <h1>Wildlife Protection Challenge</h1>
+        <p class="intro">Test your knowledge on conservation, endangered species, and environmental laws. Good luck!</p>
+
+        <form id="wildlifeQuiz">
+
+            <div class="card">
+                <p class="ques">1. What is the primary cause of habitat loss for wildlife globally?</p>
+                <label class="choice"><input type="radio" name="q1" value="A"> Natural disasters (e.g., volcanic eruptions)</label>
+                <label class="choice"><input type="radio" name="q1" value="B"> Agricultural expansion and urbanization</label>
+                <label class="choice"><input type="radio" name="q1" value="C"> Extreme weather conditions</label>
+                <label class="choice"><input type="radio" name="q1" value="D"> Disease outbreaks</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">2. Which term describes a species that faces an extremely high risk of extinction in the wild?</p>
+                <label class="choice"><input type="radio" name="q2" value="A"> Vulnerable</label>
+                <label class="choice"><input type="radio" name="q2" value="B"> Near Threatened</label>
+                <label class="choice"><input type="radio" name="q2" value="C"> Endangered</label>
+                <label class="choice"><input type="radio" name="q2" value="D"> Least Concern</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">3. Select reasons why poaching is a major threat to wildlife (Select two):</p>
+                <label class="choice"><input type="checkbox" name="q3" value="A"> Illegal trade in animal parts (e.g., ivory, horns)</label>
+                <label class="choice"><input type="checkbox" name="q3" value="B"> Natural population cycles</label>
+                <label class="choice"><input type="checkbox" name="q3" value="C"> Habitat encroachment by construction</label>
+                <label class="choice"><input type="checkbox" name="q3" value="D"> Disruption of ecological balance</label>
+            </div>
+ 
+            <div class="card">
+                <p class="ques">4. Which of these is a major impact of plastic pollution on marine animals?</p>
+                <label class="choice"><input type="radio" name="q4" value="A"> Increased food availability</label>
+                <label class="choice"><input type="radio" name="q4" value="B"> Entanglement and mistaken ingestion</label>
+                <label class="choice"><input type="radio" name="q4" value="C"> Improved breeding grounds</label>
+                <label class="choice"><input type="radio" name="q4" value="D"> Warmer ocean temperatures</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">5. What is the main purpose of a National Park?</p>
+                <label class="choice"><input type="radio" name="q5" value="A"> To serve as commercial logging areas</label>
+                <label class="choice"><input type="radio" name="q5" value="B"> To protect natural environment for conservation and recreation</label>
+                <label class="choice"><input type="radio" name="q5" value="C"> To facilitate rapid urban development</label>
+                <label class="choice"><input type="radio" name="q5" value="D"> To store industrial waste</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">6. Which large cat is commonly protected by Project Tiger?</p>
+                <label class="choice"><input type="radio" name="q6" value="A"> Leopard</label>
+                <label class="choice"><input type="radio" name="q6" value="B"> Lion</label>
+                <label class="choice"><input type="radio" name="q6" value="C"> Cheetah</label>
+                <label class="choice"><input type="radio" name="q6" value="D"> Bengal Tiger</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">7. Ways an average person can contribute to wildlife protection (Select all that apply):</p>
+                <label class="choice"><input type="checkbox" name="q7" value="A"> Reduce meat consumption</label>
+                <label class="choice"><input type="checkbox" name="q7" value="B"> Use reusable shopping bags</label>
+                <label class="choice"><input type="checkbox" name="q7" value="C"> Always leave lights on at night</label>
+                <label class="choice"><input type="checkbox" name="q7" value="D"> Recycle paper and plastic</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">8. The term 'invasive species' refers to:</p>
+                <label class="choice"><input type="radio" name="q8" value="A"> A species that moves frequently</label>
+                <label class="choice"><input type="radio" name="q8" value="B"> A non-native species whose introduction causes harm to the environment</label>
+                <label class="choice"><input type="radio" name="q8" value="C"> A species that lives only in one specific region</label>
+                <label class="choice"><input type="radio" name="q8" value="D"> A species that naturally adapts quickly</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">9. What does the "IUCN Red List" primarily assess?</p>
+                <label class="choice"><input type="radio" name="q9" value="A"> Global pollution levels</label>
+                <label class="choice"><input type="radio" name="q9" value="B"> The conservation status of plant and animal species</label>
+                <label class="choice"><input type="radio" name="q9" value="C"> Quality of life for animals in zoos</label>
+                <label class="choice"><input type="radio" name="q9" value="D"> The number of forests cut down annually</label>
+            </div>
+
+            <div class="card">
+                <p class="ques">10. The phenomenon where animals die from consuming harmful substances like DDT is called:</p>
+                <label class="choice"><input type="radio" name="q10" value="A"> Biomagnification</label>
+                <label class="choice"><input type="radio" name="q10" value="B"> Photosynthesis</label>
+                <label class="choice"><input type="radio" name="q10" value="C"> Hydroponics</label>
+                <label class="choice"><input type="radio" name="q10" value="D"> Symbiosis</label>
+            </div>
+
+            <button type="submit" class="btn">Submit Quiz</button>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const answers = {
+            q1: 'B',
+            q2: 'C',
+            q3: ['A', 'D'], 
+            q4: 'B',
+            q5: 'B',
+            q6: 'D',
+            q7: ['A', 'B', 'D'], 
+            q8: 'B',
+            q9: 'B',
+            q10: 'A'
+        };
+
+        const form = document.getElementById('wildlifeQuiz');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', function(event)
+         {
+            event.preventDefault(); 
+            
+            let score = 0;
+            const totalQuestions = 10;
+            const formData = new FormData(form);
+
+            for (let i = 1; i <= totalQuestions; i++)
+             {
+                const qName = 'q' + i;
+                const correct = answers[qName];
+              
+                if (Array.isArray(correct))
+                 {
+                    const selected = formData.getAll(qName);
+
+                    const isCorrect = (selected.length === correct.length) && 
+                                      selected.every(val => correct.includes(val));
+                    
+                    if (isCorrect)
+                     {
+                        score++;
+                    }
+
+                }
+                 else 
+                 {
+               
+                    const userChoice = formData.get(qName);
+                    if (userChoice === correct) {
+                        score++;
+                    }
+                }
+            }
+
+            let levelMessage = '';
+            
+            if (score === totalQuestions) {
+                levelMessage = "Level: <strong>Wildlife Guardian</strong> (Perfect Score! You are a true expert in conservation.)";
+            } else if (score >= 8) {
+                levelMessage = "Level: <strong>Conservation Advocate</strong> (Excellent knowledge! You have a strong grasp of the issues.)";
+            } else if (score >= 5) {
+                levelMessage = "Level: <strong>Eco-Learner</strong> (Good effort! Keep exploring conservation facts to improve.)";
+            } else {
+                levelMessage = "Level: <strong>Green Beginner</strong> (A great start! Focus on learning the fundamentals of wildlife protection.)";
+            }
+
+            resultDiv.innerHTML = `<h3 style="margin-bottom: 5px; color: #2e7d32;">Quiz Submitted Successfully!</h3>
+                                  <p style="font-size: 1.1em; margin: 0; color: #444;">${levelMessage}</p>`;
+
+            resultDiv.style.display = 'block';
+
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>

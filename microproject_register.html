@@ -1,0 +1,327 @@
+<html>
+<head>
+    <title>Wildguard registration form</title>
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    background: url("https://images.pexels.com/photos/10144602/pexels-photo-10144602.jpeg") center center/cover no-repeat fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+form {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(224, 221, 221, 0.734);
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+h2{ text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+label{
+    color: #000000;
+}
+input{
+    color: #000000;
+}
+p{
+    color: #000000;
+}
+</style>
+<form action="microproject_login.html" method="post">
+<body>
+    <h1>WildGaurd Work Registration Form</h1>
+
+<div><h2>Personal Information</h2>
+
+        <label for="name">Full Name</label><br>
+        <input type="text" id="name" name="Full Name"><br><br>
+
+        <label for="date">Date of Birth</label><br>
+        <input type="date" id="date" name="Date of Birth"><br><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age" required min="1" max="99"><br>
+
+        <p>Gender</p>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="City">City</label><br>
+        <select name="city" id="city">
+<option value="">Select City</option>
+<option value="Ahmedabad">Ahmedabad</option>
+<option value="Bengaluru">Bengaluru</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chennai">Chennai</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Delhi">Delhi</option>
+<option value="Faridabad">Faridabad</option>
+<option value="Ghaziabad">Ghaziabad</option>
+<option value="Gurugram">Gurugram</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Indore">Indore</option>
+<option value="Jaipur">Jaipur</option>
+<option value="Kanpur">Kanpur</option>
+<option value="Kochi">Kochi</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Ludhiana">Ludhiana</option>
+<option value="Madurai">Madurai</option>
+<option value="Mangaluru">Mangaluru</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Mysuru">Mysuru</option>
+<option value="Nagpur">Nagpur</option>
+<option value="Nashik">Nashik</option>
+<option value="Noida">Noida</option>
+<option value="Patna">Patna</option>
+<option value="Pune">Pune</option>
+<option value="Ranchi">Ranchi</option>
+<option value="Surat">Surat</option>
+<option value="Thane">Thane</option>
+<option value="Vadodara">Vadodara</option>
+<option value="Varanasi">Varanasi</option>
+<option value="Vijayawada">Vijayawada</option>
+<option value="Visakhapatnam">Visakhapatnam</option>
+<option value="Bhopal">Bhopal</option>
+<option value="Bhubaneswar">Bhubaneswar</option>
+<option value="Guwahati">Guwahati</option>
+<option value="Jodhpur">Jodhpur</option>
+<option value="Raipur">Raipur</option>
+<option value="Rajkot">Rajkot</option>
+<option value="Shimla">Shimla</option>
+<option value="Srinagar">Srinagar</option>
+<option value="Tiruchirappalli">Tiruchirappalli</option>
+<option value="Thiruvananthapuram">Thiruvananthapuram</option>
+<option value="Udaipur">Udaipur</option>
+<option value="Agra">Agra</option>
+<option value="Prayagraj">Prayagraj</option>
+<option value="Amritsar">Amritsar</option>
+<option value="Aurangabad">Aurangabad</option>
+<option value="Bareilly">Bareilly</option>
+<option value="Dehradun">Dehradun</option>
+ </select><br><br>
+
+         <label for="State">State</label><br>
+        <select name="State" id="State">
+            <option value="">Select State</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select><br><br>
+
+        <label for="Mobile Number">Mobile Number</label><br>
+        <input type="text" id="Mobile Number" name="Mobile Number"><br><br>
+
+        <label for="Alternate Mobile Number">Alternate Mobile Number</label><br>
+        <input type="text" id="Alternate Mobile Number" name="Alternate Mobile Number"><br><br>
+
+
+        <label for="Email Address">Email Address</label><br>
+        <input type="text" id="Email Address" name="Email Address"><br><br>
+                <label for="Alternate Email Address">Alternate Email Address</label><br>
+        <input type="text" id="Alternate Email Address" name="Alternate Email Address"><br><br>
+</div>
+<div> <h2>Job Details</h2>
+        <label>Work Type</label><br>
+        <input type="radio" id="Full time" name="Work Type" value="Full Time">
+        <label for="Full Time">Full Time</label><br>
+
+        <input type="radio" id="Part time" name="Work Type" value="Part time">
+        <label for="Part time">Part time</label><br>
+
+        <input type="radio" id="Weekends Only" name="Work Type" value="Weekends Only">
+        <label for="Weekends Only">Weekends Only</label><br><br>
+
+<label for="preference">Position Applying For (Max 2)</label><br>
+<small>(First two preference will only be considered)</small><br>
+
+
+<input type="checkbox" id="wildlife-ranger" name="Position Applying For (Max 2)">
+<label for="wildlife-ranger">Wildlife Ranger</label><br>
+
+<input type="checkbox" id="research-assistant" name="Position Applying For (Max 2)">
+<label for="research-assistant">Wildlife Research Assistant</label><br>
+
+<input type="checkbox" id="rescue-worker" name="Position Applying For (Max 2)">
+<label for="rescue-worker">Wildlife Rescue Worker</label><br>
+
+<input type="checkbox" id="conservation-officer" name="Position Applying For (Max 2)">
+<label for="conservation-officer">Conservation Officer</label><br>
+
+<input type="checkbox" id="educator" name="Position Applying For (Max 2)">
+<label for="educator">Environmental Educator</label><br>
+
+<input type="checkbox" id="veterinarian" name="Position Applying For (Max 2)">
+<label for="veterinarian">Veterinarian / Vet Assistant</label><br>
+
+<input type="checkbox" id="field-staff (Cleaning and maintenance)" name="Position Applying For (Max 2)">
+<label for="field-staff (Cleaning and maintenance)">Field Staff (Cleaning and maintenance)</label><br>
+
+<input type="checkbox" id="admin-assistant" name="Position Applying For (Max 2)">
+<label for="admin-assistant">Administrative Assistant</label><br>
+
+<input type="checkbox" id="media-assistant" name="Position Applying For (Max 2)">
+<label for="media-assistant">Photographer / Media Assistant</label><br><br>
+
+        <label>Preferred Work Duration</label><br>
+        <input type="radio" id="1 Month" name="Preferred Work Duration" value="1 Month">
+        <label for="1 Month">1 Month</label><br>
+
+        <input type="radio" id="3 Months" name="Preferred Work Duration" value="3 Months">
+        <label for="3 Months">3 Months</label><br>
+
+        <input type="radio" id="6 Months" name="Preferred Work Duration" value="6 Months">
+        <label for="6 Months">6 Months</label><br>
+
+        <input type="radio" id="1 Year" name="Preferred Work Duration" value="1 Year">
+        <label for="1 Year">1 Year</label><br>
+
+        <input type="radio" id="Permanent" name="Preferred Work Duration" value="Permanent">
+        <label for="Permanent">Permanent</label><br><br>
+        </div>
+        <div><h2>Experience & Skills</h2>
+         <label>Have you worked with animals before?</label><br>
+        <input type="radio" id="Yes" name="Have you worked with animals before?" value="Yes">
+        <label for="Yes">Yes</label><br>
+
+        <input type="radio" id="No" name="Have you worked with animals before?" value="No">
+        <label for="No">No</label><br>
+
+        <label for="preference">If yes, describe your experience Skills</label><br>
+
+<input type="checkbox" id="first-aid" name="If yes, describe your experience Skills" value="First Aid">
+<label for="first-aid">First Aid</label><br>
+
+<input type="checkbox" id="animal-handling" name="If yes, describe your experience Skills" value="Animal Handling">
+<label for="animal-handling">Animal Handling</label><br>
+
+<input type="checkbox" id="photography" name="If yes, describe your experience Skills" value="Photography">
+<label for="photography">Photography</label><br>
+
+<input type="checkbox" id="trekking" name="If yes, describe your experience Skills" value="Trekking">
+<label for="trekking">Trekking</label><br>
+
+<input type="checkbox" id="gps" name="If yes, describe your experience Skills" value="GPS & Mapping">
+<label for="gps">GPS & Mapping</label><br>
+
+<input type="checkbox" id="data-entry" name="If yes, describe your experience Skills" value="Data Entry / Reporting">
+<label for="data-entry">Data Entry / Reporting</label><br>
+
+<input type="checkbox" id="rescue-ops" name="If yes, describe your experience Skills" value="Rescue Operations">
+<label for="rescue-ops">Rescue Operations</label><br><br>
+
+<label for="document">Upload Resume / Experience certificate if worked before</label><br>
+    <input type="file" id="document" name="Upload Resume / Experience certificate if worked before"><br>
+</div>
+<div><h2>Health & Physical Fitness</h2>
+<label>Any medical conditions?/Allergies</label><br>
+        <input type="radio" id="Yes" name="Any medical conditions?/Allergies" value="Yes">
+        <label for="Yes">Yes</label><br>
+
+        <input type="radio" id="No" name="Any medical conditions?/Allergies" value="No">
+        <label for="No">No</label><br>
+
+<label>If yes then Describe</label><br>
+<input type="text" id="If yes then Describe" name="If yes then Describe"><br> 
+
+        <label>Blood Grp</label><br>
+
+<input type="radio" id="A+" name="Blood Grp" value="A+">
+<label for="A+">A+</label><br>
+
+<input type="radio" id="A-" name="Blood Grp" value="A-">
+<label for="A-">A-</label><br>
+
+<input type="radio" id="B+" name="Blood Grp" value="B+">
+<label for="B+">B+</label><br>
+
+<input type="radio" id="B-" name="Blood Grp" value="B-">
+<label for="B-">B-</label><br>
+
+<input type="radio" id="O+" name="Blood Grp" value="O+">
+<label for="O+">O+</label><br>
+
+<input type="radio" id="O-" name="Blood Grp" value="O-">
+<label for="O-">O-</label><br>
+
+<input type="radio" id="AB+" name="Blood Grp" value="AB+">
+<label for="AB+">AB+</label><br>
+
+<input type="radio" id="AB-" name="Blood Grp" value="AB-">
+<label for="AB-">AB-</label><br>
+</div>
+<div><h2>Document Uploads</h2>
+<label for="document">Aadhar card</label><br>
+    <input type="file" id="document" name="Aadhar card"><br>
+    <label for="document">Passport-size photo</label><br>
+    <input type="file" id="document" name="Passport-size photo"><br>
+    <label for="document">Signature-Photo</label><br>
+    <input type="file" id="document" name="Signature"><br>
+    </div>
+    <div><h2>Declaration</h2>
+        <label for="preference">Official Legal-Style Safety & Conduct Agreement</label><br>
+        <input type="checkbox" id="Official Legal-Style Safety & Conduct Agreement" name="Official Legal-Style Safety & Conduct Agreement">
+<label for="Official Legal-Style Safety & Conduct Agreement">I hereby acknowledge and agree that participation in activities organized by the <b>WildGaurd</b> involves inherent risks,<br>
+     including but not limited to exposure to wild animals, uneven terrain, adverse weather conditions, and other natural hazards.<br>
+     I voluntarily accept full responsibility for my own safety and conduct during my involvement.</label><br>
+     <input type="checkbox" id="Official Legal-Style Safety & Conduct Agreement" name="Official Legal-Style Safety & Conduct Agreement">
+<label for="Official Legal-Style Safety & Conduct Agreement">
+    I agree to comply with all safety protocols, operational procedures, and lawful instructions 
+    issued by authorized personnel. I understand that failure to follow these guidelines may create 
+    risks for myself, other participants, staff, and wildlife. I acknowledge that any violation of 
+    wildlife protection laws, sanctuary rules, or field safety regulations may result in immediate 
+    removal from the program and potential legal consequences under applicable laws.</label><br>
+    <input type="checkbox" id="Official Legal-Style Safety & Conduct Agreement" name="Official Legal-Style Safety & Conduct Agreement">
+<label for="Official Legal-Style Safety & Conduct Agreement">
+    By submitting this form, I affirm that the information provided is true to the best of my 
+    knowledge and that I fully accept all terms, conditions, and responsibilities stated above.
+</label><br>
+</div>
+     <button type="button" onclick="alert('Thankyou!!')">Click me!</button>
+        <input type="submit" value="submit">
+
+    </form>
+
+</body>
+
+</html>

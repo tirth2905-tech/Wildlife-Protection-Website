@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wgh{
+            padding-right:40px ;
+            padding-left:30px ;
+            color: #F3F1C4;
+            font-size: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .barb1{
+            
+            padding-right:20px;
+            padding-left: 10px;
+            color: #F3F1C4;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        .barb2{
+            
+            padding-right:15px;
+            padding-left: 10px;
+            color: #F3F1C4;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        .barb3{
+            
+            padding-right:25px;
+            padding-left: 0px;
+            color: #F3F1C4;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        .barb4{
+            
+            padding-right:0px;
+            padding-left: 10px;
+            color: #F3F1C4;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+        .bar{
+            background-color: rgba(41, 41, 31, 0.7);
+            padding-bottom: 20px;
+            border-radius: 50px;
+            text-align: center;
+            width: 780px;
+            margin-right: auto;
+            margin-left: auto;
+            
+        }
+        .bar {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            background-color: rgba(41, 41, 31, 0.7); /* transparent */
+            padding: 20px;
+            border-radius: 50px;
+
+            backdrop-filter: blur(10px); /* your blur */
+        }
+        .bar a{
+            text-decoration: none;
+        }
+        body{
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-image: url("https://www.colorhexa.com/fbf8f2.png");
+            background-size: cover;
+            
+        }
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .fstp{
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .headt h1{
+            font-size: 50px;
+            
+            margin: 0px;
+            font-family: "fontGTUltra", "fontGTUltra Fallback";;
+            color: #eef3ca;
+        }
+        .headt{
+            height: 558px;
+            display: flex;
+            z-index: 3;
+            justify-content: flex-start;
+            align-items: flex-end;
+            min-height: 100%;
+            margin-left: 70px;
+        }
+        .lm{
+            background-color: #F3F1C4;
+            padding: 15px 15px 15px 15px;
+            width: 170px;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 70px;
+            border-radius: 30px;
+            transition: background-color 0.5s ;
+            color: rgb(41, 41, 31);
+            border: none;
+            font-size: 16px;
+        }
+        .lmb{
+            text-decoration: none;
+            color: rgb(41, 41, 31);
+            font-size: larger;
+        }
+        .lm:hover{
+            background-color: rgb(41, 41, 31);
+            color: #F3F1C4;
+        }
+        .lmb:hover{
+            background-color: rgb(41, 41, 31);
+            color: #F3F1C4;
+        }
+        .sndp h1{
+            padding-left: 20px;
+            margin-top: 0;
+            padding-top: 50px;
+            margin-bottom: 50px;
+        }
+        .news{
+            
+            display: flex;
+            gap: 25px;
+            justify-content: space-around;
+            margin-bottom: 100px;
+        }
+        .nc1{
+            display: flex;
+            gap: 16px;
+            font-size: 18px;
+        }
+        .news1{
+            text-decoration: none;
+            color: black;
+        }
+        .n1{
+            
+            border-top:  solid rgb(41, 41, 31);
+            border-width: 3px;
+            width: 650px;
+            padding-bottom: 21.28px;
+        }
+        .nimg1{
+            border-radius: 10px;
+        }
+        .nc2{
+            display: flex;
+            gap: 16px;
+            font-size: 18px;
+        }
+        .news2{
+            text-decoration: none;
+            color: black;
+        }
+        .n2{
+            
+            border-top:  solid rgb(41, 41, 31);
+            border-width: 3px;
+            width: 650px;
+            padding-bottom: 21.28px;
+        }
+        .nimg2{
+            border-radius: 10px;
+        }
+        .mis{
+            
+            padding-top: 100;
+            margin-bottom: 50px;
+            margin: auto;
+            background-color: rgb(41, 41, 31);
+        }
+        .mifr{
+            
+            color: #F3F1C4;
+            font-size: 23px;
+            padding-left: 40px;
+            padding-right: 30px;
+            padding-bottom: 70px;
+            width:1300px;
+            display: flex;
+            gap: 60px;
+            justify-content: space-between;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+        .galg {
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 ;
+        }
+        .gal{
+            margin-bottom: 100px;
+        }
+        .gal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+        .gallp{
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gal1p1{
+            opacity: 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+        footer {
+        background: rgb(41, 41, 31);
+        color: #F3F1C4;
+        padding-top: 30px;
+        padding-bottom: 0px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .footer-column {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            color: #F3F1C4;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .MORE{
+            display: flex;
+            justify-content: center;
+            gap: 100PX;
+        }
+        .MORE a{
+            text-decoration: none;
+            color: #F3F1C4;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+        .morec{
+            display: flex;
+            justify-content: center;
+        }
+        .morec h1{
+            color: #F3F1C4;
+            font-size: 60px;
+            font-family:monospace;
+        }
+        
+
+@media (max-width: 992px) {
+
+
+    .bar {
+        width: 90%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .wgh {
+        font-size: 26px;
+        padding: 0;
+    }
+
+    .headt {
+        margin-left: 20px;
+        text-align: left;
+    }
+    .headt h1 {
+        font-size: 40px;
+    }
+
+    .lm {
+        margin-left: 20px;
+        width: 150px;
+    }
+
+
+    .news {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .n1, .n2 {
+        width: 90%;
+    }
+
+
+    .mifr {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        padding: 20px;
+    }
+    .mifri img {
+        width: 100%;
+        height: auto;
+    }
+    .mifr p {
+        text-align: left;
+    }
+
+    .galg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+ 
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-column {
+        width: 45%;
+    }
+
+    .MORE {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+   
+    .headt {
+        margin-left: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .headt h1 {
+        font-size: 32px;
+    }
+    .lm {
+        margin-left: 0;
+        display: block;
+        margin: 30px auto;
+        width: 140px;
+    }
+
+  
+    .bar {
+        width: 95%;
+        border-radius: 30px;
+        gap: 10px;
+    }
+    .bar a {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .wgh {
+        font-size: 20px;
+    }
+
+   
+    .nc1 img, .nc2 img {
+        width: 200px;
+        height: auto;
+    }
+
+  
+    .mifri img {
+        width: 100%;
+    }
+
+ 
+    .galg {
+        grid-template-columns: 1fr;
+    }
+
+   
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .MORE {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .MORE a {
+        font-size: 28px;
+    }
+    .morec h1 {
+        font-size: 40px;
+    }
+}
+    
+    
+    </style>
+    
+</head>
+<body>
+    <section class="fstp" id="fstp">
+        
+        <div class="bar">
+            <a class="barb1" href="#fstp">HOME</a>
+            <a class="barb2" href="microproject_event.html">EVENT</a>
+            <a class="wgh" href="">WILDGUARD</a>
+            <a class="barb3" href="microproject_guidelines.html">GUIDELINES</a>
+            <a class="barb4" href="microproject_login.html">LOGIN</a>
+
+        </div>
+        <div class="headt">
+        <h1>For Those Who Can’t Speak</h1>
+
+        </div>
+        <div style="padding: 0 0 50px;">
+            <button onclick="location.href = '#sndp';" class="lm" >Learn More</button>
+
+        </div>
+        <div class="bgv">
+            <video class="bg-video" autoplay muted loop src="https://cms.vantara.in/uploads/Hero_Banner_Nov_25_0b7f7d6c2b.mp4"></video>
+        </div>
+    </section>
+    <section class="sndp" id="sndp">
+        <h1 style="font-size: 40px;">Latest News</h1>
+        <div class="news">
+            <img src="background-image: url(https://www.colorhexa.com/fbf8f2.png);" alt="">
+            <a class="news1" href="https://www.worldanimalprotection.org/latest/news/south-africa-new-environment-minister-wildlife-risk/">
+                <div class="n1">
+                    <div class="date1">
+                        <h4>17 November 2025</h4>
+                    </div>
+                    <div class="nc1">
+                        <div>
+                        <img class="nimg1" src="https://www.worldanimalprotection.org/cdn-cgi/image/width=1376,format=auto,fit=cover/siteassets/images/tourism/lions-in-the-long-grass-1014918.jpg" alt="" width="300" height="150" >
+                        </div>
+                        <div>
+                            <p style="width: 300px;">New Minister Appointment 
+raises alarms for wildlife protection in South Africa</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="news2" href="https://www.hindustantimes.com/india-news/supreme-court-issues-norms-to-conserve-tigers-and-regulate-reserves-101763406629345.html">
+                <div class="n2">
+                    <div class="date2">
+                        <h4>18 November 2025</h4>
+                    </div>
+                    <div class="nc2">
+                        <div>
+                        <img class="nimg2" src="https://www.hindustantimes.com/ht-img/img/2025/11/17/550x309/The-court-s-comprehensive-pan-India-guidelines--ai_1763406622462.jpg" alt="" width="300" height="150" >
+                        </div>
+                        <div>
+                            <p style="width: 300px;">Supreme Court issues norms to conserve tigers and regulate reserves</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="mis">
+            
+            <div class="mifr">
+                
+                <div class="mifrc">
+                    <h1 style="padding-bottom: 40px; padding-top: 50px;">OUR MISSIONS</h1>
+                    <p>1. Protect Endangered Wildlife</p>
+                    <p>To safeguard threatened and endangered species through research, monitoring, and direct on-ground protection.</p><br>
+                    <p>2. Restore Natural Habitats</p>
+                    <p>To conserve and restore forests, wetlands, grasslands, oceans, and other natural ecosystems essential for wildlife survival.</p><br>
+                    <p>3. Combat Poaching & Illegal Wildlife Trade</p>
+                    <p>To work with law enforcement, communities, and technology to prevent poaching, trafficking, and all forms of exploitation of wild animals.</p>
+                </div>
+                <div class="mifri" style="padding-top: 60px; padding-right: 20px;">
+                    <img src="https://images.pexels.com/photos/1669860/pexels-photo-1669860.jpeg?cs=srgb&dl=pexels-julia-barthold-61520-1669860.jpg&fm=jpg" alt="" width="430" height="650">
+                </div>
+            </div>
+        </div>
+        <div class="gall">
+            <h1 style="text-align: center; font-size: 70px; padding-bottom: 70px; color: rgb(41, 41, 31); font-family:'Courier New', Courier, monospace;">GALLERY</h1>
+            <div class="galg">
+                <div class="gal">
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo1" loading="lazy" width="1464" height="1228" decoding="async" data-nimg="1" 
+                            class="gallp"
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F03_31d22d90e3.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo2" loading="lazy" width="1464" height="1724" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F06_7258cf12ae.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo3" loading="lazy" width="1464" height="1724" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F08_a9c01b0065.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal">
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo4" loading="lazy" width="1464" height="784" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F02_3d6a96490a.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo5" loading="lazy" width="1464" height="1076" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F04_0e1276f324.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal">
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo6" loading="lazy" width="1464" height="808" decoding="async" data-nimg="1" 
+                            class="gallp"
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F11_ee18640344.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo7" loading="lazy" width="1464" height="1496" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F10_acf56a0151.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo8" loading="lazy" width="1224" height="1316" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F09_e90ba155fc.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                </div>
+                <div class="gal">
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo9" loading="lazy" width="1464" height="1496" decoding="async" data-nimg="1" 
+                            class="gallp"
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F07_1f9116bea0.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo10" loading="lazy" width="1354" height="1430" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F05_d33edd403d.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                    <div class="gal1p1">
+                        <div>
+                            <img alt="photo11" loading="lazy" width="1464" height="1226" decoding="async" data-nimg="1" 
+                            class="gallp" 
+                            src="https://vantara.in/_next/image?url=https%3A%2F%2Fcms.vantara.in%2Fuploads%2F01_8c6453797d.jpg&w=3840&q=75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>WildGuard</h3>
+            <p>Dedicated to <br><br>wildlife protection <br><br>and environmental <br><br>awareness.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: wildguard@example.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Location: WildGuard Sanctuary, India</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <a>Instagram</a>
+            <a>Facebook</a>
+            <a>Twitter (X)</a>
+            <a>YouTube</a>
+        </div>
+
+        <div class="footer-column">
+    <h3>How You Can Help</h3>
+    <a>Donate</a>
+    <a>Volunteer</a>
+    <a>Adopt an Animal</a>
+    <a>Spread Awareness</a>
+    <a>Join Campaigns</a>
+</div>
+<div class="footer-column">
+    <h3>Events</h3>
+    <p>Awareness Programs</p>
+    <p>Tree Plantation Drives</p>
+    <p>Wildlife Week Events</p>
+    <p>Upcoming Workshops</p>
+        </div>
+    </div>
+    <div class="morec">
+        <h1><span style="vertical-align:bottom;">[</span>MORE<span style="vertical-align: bottom;">]</span></h1>
+    </div>
+    <div class="MORE">
+        
+        <a href="microproject_urgent.html">ENDANDERED SPECIES</a>
+        <a href="microproject_quiz.html">QUIZ</a>
+        <a href="microproject_ebook.html">SAFETY GUIDELINES</a>
+        <a href="mocroproject_donation.html">DONATION</a>
+    </div>
+    <div class="footer-bottom">
+        © 2025 WildGuard • All Rights Reserved
+    </div>
+</footer>
+
+</html>
